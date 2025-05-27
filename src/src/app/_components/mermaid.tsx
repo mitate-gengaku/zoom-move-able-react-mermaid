@@ -33,6 +33,7 @@ export const Mermaid = ({ code }: { code: string }) => {
           svgElement.style.transition = isDragging ? "none" : "transform 0.2s ease";
         }
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (error) {
         outputRef.current.innerHTML = "Invalid syntax";
       }

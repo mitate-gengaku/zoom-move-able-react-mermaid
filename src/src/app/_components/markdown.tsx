@@ -9,9 +9,9 @@ export const Markdown = ({ content }: { content: string }) => {
   return (
     <ReactMarkdown
       components={{
-        // eslint-disable-next-line  unused-imports/no-unused-vars
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         pre: ({ node, ...props }) => <pre {...props} className={cn(props.className, "w-full")} />,
-        // eslint-disable-next-line  unused-imports/no-unused-vars
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         code: ({ node, children, className }) => {
           if (className === "language-mermaid") {
             return <Mermaid code={children as string} />
